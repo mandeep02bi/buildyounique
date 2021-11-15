@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action ="" accept-charset="UTF-8" method="get" enctype="text/plain">
+        <label for="fname">First Name:</label>
+        <input type="text" id = "fname" name="fname" autocomplete="name"/><br><br>
+        <label for="fpass">Password</label>
+        <input type="password" id = "fpass" name="fpass" maxlength="4"/><br><br>
+        <label for="numbers">Number</label>
+        <input id="numbers" name="numbers" type="number" min="7.2"><br><br>
+        <label for="fruit">Fruits</label>
+        <input type="text" id="fruit" minlength="2"><br><br>
+        <label for="peas">Do you like peas?</label>
+        <input type="checkbox" name="peas" id="peas"><BR><br>
+        <label for="week">Choose a week in May or June:</label>
+        <input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required><br><br>
+        <label for="url">Enter an https:// URL:</label>
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required><br><br>
+        <label for="appt">Choose a time for your meeting:</label>
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+        <small>Office hours are 9am to 6pm</small><br><br>
+        <label for="fname">First Name:</label>
+        <input type="text" id = "fname" name="fname" autocomplete="name" spellcheck="true"/><br><br>
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required>
+        <small>Format: 123-456-7890</small><br><br>
+        <label for="site-search">Search the site:</label>
+        <input type="search" id="site-search" name="q" aria-label="Search through site content"><br><br>
+        <button>Search</button><br><br>
+        <input type="reset" value="Reset"><br><br>
+        <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+        <label for="cowbell">Cowbell</label><br><br>
+        <input type="range" list="tickmarks">
+        <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100"></option>
+        </datalist><br><br>
+        <input type="radio" id="huey" name="drone" value="huey" checked>
+        <label for="huey">Huey</label><br><br>
+        <label for="tentacles">Number of tentacles (10-100):</label>
+        <input type="number" id="tentacles" name="tentacles" min="10" max="100"><br><br>
+        <label for="start">Start month:</label>
+        <input type="month" id="start" name="start" min="2018-03" value="2018-05"><br><br>
+        <input type="image" id="image" alt="Login" src="/media/examples/login-button.png"><br><br>
+        <input type="hidden" id="postId" name="postId" value="34657">
+        <label for="avatar">Choose a profile picture:</label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"><br><br>
+        <label for="email">Enter your globex.com email:</label>
+        <input type="email" id="email" pattern=".+@globex\.com" size="30" required><br><br>
+        <label for="start">Start date:</label>
+        <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31"><br><br>
+        <input type="color" id="head" name="head" value="#e66465">
+        <label for="head">Head</label><br><br>     
+        <input type="submit" name="submit">
+    </form>
+    
+</body>    
+</html>
